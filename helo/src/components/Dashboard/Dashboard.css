@@ -1,0 +1,28 @@
+.Dashbody {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px;
+    background-color: #f2f2f2;
+}
+
+.Dashtop {
+    padding: 30px;
+    box-sizing: border-box;
+    display: flex;
+    background-color: white;
+    height: 65px;
+    width: 70%;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.DashSearch {
+    display: flex;
+}
+
+.SearchButt {
+    background-color: #ff9770;
+    padding: 2px;
+}

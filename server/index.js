@@ -11,6 +11,10 @@ massive( process.env.CONNECTION_STRING ).then( dbInstance => { app.set('db', dbI
 app.use( bodyParser.json());
 app.use( cors() );
 
+app.post('/api/users', controller.addUser)
+app.post('/api/user', controller.loginUser)
+app.get('/api/posts/:id', controller.getPosts)
+app.get('/api.post/:id', controller.getPost)
 
 let PORT = process.env.PORT || 4000;
 app.listen(PORT, () => {console.log(`Listening on port: ${PORT}`);});
